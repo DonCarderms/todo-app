@@ -36,7 +36,10 @@ body{
   padding: 8px 15px;
   border-radius: 5px;
 }
-
+svg{
+  color: #fff;
+  width: 20px;
+}
 #bt:hover{
   background-color: #4b5cbd;
 }
@@ -52,4 +55,18 @@ h1{
   display: flex;
   justify-content: space-between;
   margin:20px 0;
+}
+
+.btn-delete, .btn-edit{
+    margin-right: 10px;
+    background: #DC2626;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.btn-edit{
+  background-color: #d3cdcd;
+}
+.btn-edit img{
+  width: 20px;
 }

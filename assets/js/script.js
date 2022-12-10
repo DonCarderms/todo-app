@@ -44,15 +44,17 @@ add.addEventListener('click',  (event)=> {
                 // delete
                 btnDelete.onclick = () =>{
                         const alerta = confirm("quer mesmo exluir a tarefa")
-                        if(alerta == true){
-                                document.getElementById(divContent.id).remove();
+                        if(alerta){
+                            document.getElementById(divContent.id).remove();
                         }
                 }
                 
                 // editar
                 btnEdit.onclick = () =>{
-                   newTask = prompt("editar tarefa")
-                    paragrafo.innerHTML = newTask
+                    newTask = prompt("editar tarefa")
+                    if(newTask.confirm && newTask.value !== ""){
+                            paragrafo.innerHTML = newTask
+                    }
                         
                 }
                 

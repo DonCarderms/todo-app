@@ -4,7 +4,6 @@ const add = document.getElementById("bt");
 let index = 0;
 add.addEventListener('click',  (event)=> {
         event.defaultPrevented;
-        console.log(event);
 
         const input = document.getElementById("texto")
         const texto = input.value;    
@@ -52,7 +51,7 @@ add.addEventListener('click',  (event)=> {
                 // editar
                 btnEdit.onclick = () =>{
                     newTask = prompt("editar tarefa")
-                    if(newTask.confirm && newTask.value !== ""){
+                    if(newTask !== ""){
                             paragrafo.innerHTML = newTask
                     }
                         

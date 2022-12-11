@@ -19,7 +19,7 @@ add.addEventListener('click',  (event)=> {
                 divBtnAction.setAttribute('class', "btn-action")
              
         
-                const paragrafo = document.createElement('p');
+                const paragrafo = document.createElement('input');
                 const btnDelete = document.createElement('button');
                 const btnEdit = document.createElement('button');
                 btnDelete.setAttribute('id', index);
@@ -27,7 +27,7 @@ add.addEventListener('click',  (event)=> {
                 btnEdit.setAttribute('id', index);
                 btnEdit.setAttribute('class', "btn-edit");
         
-                paragrafo.innerHTML = `${texto}`;
+                paragrafo.value = `${texto}`;
                 btnDelete.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>';
                 btnEdit.innerHTML = `
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -67,7 +67,7 @@ add.addEventListener('click',  (event)=> {
                 btnEdit.onclick = () =>{
                     newTask = prompt("editar tarefa")
                     if(newTask !== ""){
-                            paragrafo.innerHTML = newTask
+                            paragrafo.value = newTask
                     }
                         
                 }

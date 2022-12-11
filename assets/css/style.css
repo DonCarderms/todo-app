@@ -59,7 +59,10 @@ h1{
 .to-do-list-content p{
   margin-top: 10px;
 }
-
+.todo-list-p{
+  width: 170px;
+  border: 0 !important;
+}
 .btn-delete, .btn-edit{
     margin-right: 10px;
     background: #DC2626;

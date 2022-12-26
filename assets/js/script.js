@@ -3,7 +3,7 @@ const todosContainer = document.getElementById("to-do");
 const add = document.getElementById("bt");
 let index = 0;
 add.addEventListener('click',  (event)=> {
-        event.defaultPrevented;
+        event.defaultPrevented();
 
         const input = document.getElementById("texto")
         const texto = input.value;    

@@ -1,9 +1,3 @@
-# todo-app
+# Todo List App with LocalStorage
 
-
-
-
-## fiz este todo no intuito de praticar localStorage do navegador.
-- adicionar dados no localStorage
-- atualizar dados no localStorage
-- deletar dados no localStorage
+## A simple Todo List web application built to practice using the browser's localStorage feature. This app allows you to create, update, and delete tasks while persistently storing your data in localStorage.
